@@ -1,0 +1,43 @@
+object frmFormTransitionUI: TfrmFormTransitionUI
+  Left = 0
+  Top = 0
+  Caption = 'Form3'
+  ClientHeight = 226
+  ClientWidth = 216
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Image1: TImage
+    MultiResBitmap = <
+      item
+      end>
+    Position.X = 24.000000000000000000
+    Position.Y = 24.000000000000000000
+    Size.Width = 73.000000000000000000
+    Size.Height = 89.000000000000000000
+    Size.PlatformDefault = False
+    WrapMode = Stretch
+  end
+  object Image2: TImage
+    MultiResBitmap = <
+      item
+      end>
+    Position.X = 120.000000000000000000
+    Position.Y = 24.000000000000000000
+    Size.Width = 73.000000000000000000
+    Size.Height = 89.000000000000000000
+    Size.PlatformDefault = False
+    WrapMode = Stretch
+  end
+  object Fade: TRectangle
+    Fill.Color = claBlack
+    Opacity = 0.500000000000000000
+    Position.X = 24.000000000000000000
+    Position.Y = 128.000000000000000000
+    Size.Width = 73.000000000000000000
+    Size.Height = 65.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+  end
+end

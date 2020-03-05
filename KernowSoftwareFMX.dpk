@@ -1,0 +1,57 @@
+package KernowSoftwareFMX;
+
+{$R *.res}
+
+//{$DEFINE INCLUDE_LEGACY_COMPONENTS}
+
+
+requires
+  rtl,
+  fmx,
+  designide;
+
+contains
+
+  {$IFDEF INCLUDE_LEGACY_COMPONENTS}
+  ksTableView in 'ksTableView.pas',
+  ksMainMenu in 'ksMainMenu.pas',
+  ksChatView in 'ksChatView.pas',
+  {$ENDIF}
+
+  ksCommon in 'ksCommon.pas',
+  ksTypes in 'ksTypes.pas',
+  ksSegmentButtons in 'ksSegmentButtons.pas',
+  ksTileMenu in 'ksTileMenu.pas',
+  ksNetHttpClient in 'ksNetHttpClient.pas',
+  ksSpeedButton in 'ksSpeedButton.pas',
+  ksControlBadge in 'ksControlBadge.pas',
+  ksCamara in 'ksCamara.pas',
+  ksCameraViewer in 'ksCameraViewer.pas',
+  ksTabControl in 'ksTabControl.pas',
+  ksComponentEditors in 'ksComponentEditors.pas',
+  ksVirtualListView in 'ksVirtualListView.pas',
+  ksImageViewer in 'ksImageViewer.pas',
+  ksProgressIndicator in 'ksProgressIndicator.pas',
+  ksCircleProgress in 'ksCircleProgress.pas',
+  ksLoadingIndicator in 'ksLoadingIndicator.pas',
+  ksSlideMenu in 'ksSlideMenu.pas',
+  ksSlideMenuUI in 'ksSlideMenuUI.pas',
+  ksFormTransition in 'ksFormTransition.pas',
+  ksFormTransitionUI in 'ksFormTransitionUI.pas' {frmFormTransitionUI},
+  ksAppEvents in 'ksAppEvents.pas',
+  ksToolbar in 'ksToolbar.pas',
+  ksPickers in 'ksPickers.pas',
+  ksMapView in 'ksMapView.pas',
+  ksProgressBar in 'ksProgressBar.pas',
+  ksListViewFilter in 'ksListViewFilter.pas',
+  ksPinCode in 'ksPinCode.pas',
+  ksSystemSound in 'ksSystemSound.pas';
+
+
+
+end.
+
+
+
+
+

@@ -1,0 +1,40 @@
+object frmSlideMenuUI: TfrmSlideMenuUI
+  Left = 0
+  Top = 0
+  Caption = 'Form3'
+  ClientHeight = 364
+  ClientWidth = 364
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnKeyUp = FormKeyUp
+  DesignerMasterStyle = 0
+  object lvMenu: TksVirtualListView
+    Align = Left
+    Appearence.Background = claDarkslategray
+    Appearence.SeparatorColor = xFF1B2E2E
+    Appearence.ItemBackground = claDarkslategray
+    Appearence.SelectedColor = claRed
+    Appearence.SelectedFontColor = claWhite
+    DeleteButton.Text = 'Delete'
+    ItemHeight = 50
+    HeaderHeight = 30
+    NoItemsText.Font.Size = 18.000000000000000000
+    PullToRefresh.PullText = 'PULL TO REFRESH'
+    PullToRefresh.ReleaseText = 'RELEASE TO REFRESH'
+    SelectionOptions.KeepSelection = True
+    Size.Width = 250.000000000000000000
+    Size.Height = 364.000000000000000000
+    Size.PlatformDefault = False
+    OnMouseUp = lvMenuMouseUp
+  end
+  object PaintBox1: TPaintBox
+    Position.X = 256.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 113.000000000000000000
+    Size.Height = 121.000000000000000000
+    Size.PlatformDefault = False
+    OnClick = PaintBox1Click
+    OnPaint = PaintBox1Paint
+  end
+end
