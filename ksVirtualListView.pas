@@ -531,6 +531,7 @@ type
     function IsItemVisible(AViewPort: TRectF): Boolean;
     function AddText(x, y: single; AText: string): TksVListItemTextObject; overload;
     function AddText(x, y: single; AText: string; AFontColor: TAlphaColor; AFontSize: integer): TksVListItemTextObject; overload;
+    function AddText(x, y: single; AText: string; AFontColor: TAlphaColor; AFontSize: integer; AFontName: string): TksVListItemTextObject; overload;
     function AddText(x, y, AWidth: single; AText: string): TksVListItemTextObject; overload;
     function AddDetailText(y: single; AText: string): TksVListItemTextObject; overload;
     function AddImage(x, y, AWidth, AHeight: single; ABitmap: TBitmap): TksVListItemImageObject;
@@ -1000,6 +1001,16 @@ begin
   Result.FChecked := AChecked;
   FCanSelect := False;
   FObjects.Add(Result);
+end;
+
+function TksVListItem.AddText(x, y: single; AText: string;
+  AFontColor: TAlphaColor; AFontSize: integer;
+  AFontName: string): TksVListItemTextObject;
+begin
+  Result := AddText(x, y, AText);
+  Result.TextSettings.FontColor := AFontColor;
+  Result.TextSettings.Font.Size := AFontSize;
+  Result.TextSettings.Font.Family := AFontName;
 end;
 
 function TksVListItem.AddText(x, y: single; AText: string;
