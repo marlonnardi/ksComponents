@@ -1,0 +1,55 @@
+object Form99: TForm99
+  Left = 0
+  Top = 0
+  Caption = 'Form99'
+  ClientHeight = 480
+  ClientWidth = 312
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Button1: TButton
+    Position.X = 8.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 105.000000000000000000
+    Size.Height = 31.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'Show Indicator'
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Position.X = 136.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 105.000000000000000000
+    Size.Height = 31.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'Hide Indicator'
+    OnClick = Button2Click
+  end
+  object cbFade: TCheckBox
+    Position.X = 8.000000000000000000
+    Position.Y = 128.000000000000000000
+    TabOrder = 3
+    Text = 'Fade Background'
+  end
+  object Button3: TButton
+    Position.X = 8.000000000000000000
+    Position.Y = 72.000000000000000000
+    Size.Width = 233.000000000000000000
+    Size.Height = 31.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Show Modal Indicator'
+    OnClick = Button3Click
+  end
+  object timerModal: TTimer
+    Enabled = False
+    Interval = 2500
+    OnTimer = timerModalTimer
+    Left = 24
+    Top = 176
+  end
+end

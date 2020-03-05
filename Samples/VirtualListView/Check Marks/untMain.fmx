@@ -1,0 +1,105 @@
+object Form24: TForm24
+  Left = 0
+  Top = 0
+  Caption = 'Form24'
+  ClientHeight = 406
+  ClientWidth = 329
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object ToolBar2: TToolBar
+    Align = Bottom
+    Position.Y = 362.000000000000000000
+    Size.Width = 329.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'bottomtoolbar'
+    TabOrder = 1
+    object ksSegmentButtons1: TksSegmentButtons
+      Align = Client
+      ItemIndex = 1
+      Segments = <
+        item
+          ID = ''
+          Text = 'Left Aligned'
+          BadgeValue = 0
+        end
+        item
+          ID = ''
+          Text = 'Right Aligned'
+          BadgeValue = 0
+        end>
+      Size.Width = 248.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      OnSelectSegment = ksSegmentButtons1SelectSegment
+    end
+    object CheckBox1: TCheckBox
+      Align = Right
+      Margins.Left = 8.000000000000000000
+      Position.X = 256.000000000000000000
+      Size.Width = 73.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Multi'
+      OnChange = CheckBox1Change
+    end
+  end
+  object ToolBar1: TToolBar
+    Size.Width = 329.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Label1: TLabel
+      Align = Client
+      StyledSettings = [Family, Style, FontColor]
+      HitTest = True
+      Size.Width = 329.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 16.000000000000000000
+      TextSettings.HorzAlign = Center
+      Text = 'CheckMarks Demo'
+    end
+  end
+  object ksVirtualListView1: TksVirtualListView
+    Align = Client
+    CheckBoxes.Visible = True
+    DeleteButton.Text = 'Delete'
+    NoItemsText.Font.Size = 18.000000000000000000
+    PullToRefresh.PullText = 'Pull to refresh...'
+    PullToRefresh.ReleaseText = 'Release to refresh'
+    Size.Width = 329.000000000000000000
+    Size.Height = 318.000000000000000000
+    Size.PlatformDefault = False
+    object TScrollBar
+      Max = 161.000000000000000000
+      ViewportSize = 161.000000000000000000
+      SmallChange = 0.000000000000000000
+      Orientation = Vertical
+      Opacity = 0.000000000000000000
+      Position.X = 127.000000000000000000
+      Size.Width = 18.000000000000000000
+      Size.Height = 161.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Visible = False
+    end
+    object TScrollBar
+      Max = 161.000000000000000000
+      ViewportSize = 161.000000000000000000
+      SmallChange = 0.000000000000000000
+      Orientation = Vertical
+      Opacity = 0.000000000000000000
+      Position.X = 127.000000000000000000
+      Size.Width = 18.000000000000000000
+      Size.Height = 161.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Visible = False
+    end
+  end
+end

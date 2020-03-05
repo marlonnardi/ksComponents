@@ -1,0 +1,48 @@
+object Form106: TForm106
+  Left = 0
+  Top = 0
+  Caption = 'Form106'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 2
+  object ksVirtualListView1: TksVirtualListView
+    Align = Client
+    DeleteButton.Text = 'Delete'
+    NoItemsText.Font.Size = 18.000000000000000000
+    PullToRefresh.PullText = 'PULL TO REFRESH'
+    PullToRefresh.ReleaseText = 'RELEASE TO REFRESH'
+    Size.Width = 640.000000000000000000
+    Size.Height = 392.000000000000000000
+    Size.PlatformDefault = False
+    OnItemSegmentButtonClick = ksVirtualListView1ItemSegmentButtonClick
+  end
+  object ksToolbar1: TksToolbar
+    Font.Size = 14.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+  end
+  object ToolBar1: TToolBar
+    Align = Bottom
+    Position.Y = 436.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'bottomtoolbar'
+    TabOrder = 2
+    object lblClickInfo: TLabel
+      Align = Client
+      Size.Width = 640.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.HorzAlign = Center
+      Text = '<click information>'
+      TabOrder = 1
+    end
+  end
+end

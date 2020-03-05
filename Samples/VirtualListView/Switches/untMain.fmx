@@ -1,0 +1,30 @@
+object Form99: TForm99
+  Left = 0
+  Top = 0
+  Caption = 'Form99'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object ksVirtualListView1: TksVirtualListView
+    Align = Client
+    DeleteButton.Text = 'Delete'
+    NoItemsText.Font.Size = 18.000000000000000000
+    PullToRefresh.PullText = 'PULL TO REFRESH'
+    PullToRefresh.ReleaseText = 'RELEASE TO REFRESH'
+    Size.Width = 640.000000000000000000
+    Size.Height = 436.000000000000000000
+    Size.PlatformDefault = False
+    OnItemSwitchClick = ksVirtualListView1ItemSwitchClick
+  end
+  object ksToolbar1: TksToolbar
+    Font.Size = 14.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+  end
+end

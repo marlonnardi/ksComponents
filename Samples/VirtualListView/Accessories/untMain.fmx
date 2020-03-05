@@ -1,0 +1,80 @@
+object Form24: TForm24
+  Left = 0
+  Top = 0
+  Caption = 'Form24'
+  ClientHeight = 393
+  ClientWidth = 327
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object ToolBar1: TToolBar
+    Size.Width = 327.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Label1: TLabel
+      Align = Client
+      StyledSettings = [Family, Style, FontColor]
+      Size.Width = 327.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 16.000000000000000000
+      TextSettings.HorzAlign = Center
+      Text = 'Row Accessories Demo'
+    end
+  end
+  object ksVirtualListView1: TksVirtualListView
+    Align = Client
+    DeleteButton.Text = 'Delete'
+    NoItemsText.Font.Size = 18.000000000000000000
+    PullToRefresh.PullText = 'PULL TO REFRESH'
+    PullToRefresh.ReleaseText = 'RELEASE TO REFRESH'
+    Size.Width = 327.000000000000000000
+    Size.Height = 305.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object ToolBar2: TToolBar
+    Align = Bottom
+    Padding.Left = 4.000000000000000000
+    Padding.Top = 4.000000000000000000
+    Padding.Right = 4.000000000000000000
+    Padding.Bottom = 4.000000000000000000
+    Position.Y = 349.000000000000000000
+    Size.Width = 327.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'bottomtoolbar'
+    TabOrder = 1
+    object ksSegmentButtons1: TksSegmentButtons
+      Align = Client
+      ItemIndex = 0
+      Segments = <
+        item
+          ID = ''
+          Text = 'DEFAULT'
+          BadgeValue = 0
+        end
+        item
+          ID = ''
+          Text = 'RED'
+          BadgeValue = 0
+        end
+        item
+          ID = ''
+          Text = 'GREEN'
+          BadgeValue = 0
+        end
+        item
+          ID = ''
+          Text = 'BLUE'
+          BadgeValue = 0
+        end>
+      Size.Width = 319.000000000000000000
+      Size.Height = 36.000000000000000000
+      Size.PlatformDefault = False
+      OnSelectSegment = ksSegmentButtons1SelectSegment
+    end
+  end
+end

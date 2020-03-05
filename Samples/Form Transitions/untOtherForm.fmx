@@ -1,0 +1,35 @@
+object Form5: TForm5
+  Left = 0
+  Top = 0
+  Caption = 'Form5'
+  ClientHeight = 403
+  ClientWidth = 297
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 2
+  object ksVirtualListView1: TksVirtualListView
+    Align = Client
+    CheckBoxes.Visible = True
+    CheckBoxes.Mode = ksMultiSelect
+    CheckBoxes.Alignment = ksCbLeftAlign
+    DeleteButton.Text = 'Delete'
+    NoItemsText.Font.Size = 18.000000000000000000
+    PullToRefresh.PullText = 'PULL TO REFRESH'
+    PullToRefresh.ReleaseText = 'RELEASE TO REFRESH'
+    Size.Width = 297.000000000000000000
+    Size.Height = 359.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object ksToolbar1: TksToolbar
+    Font.Size = 14.000000000000000000
+    Text = 'OTHER FORM'
+    Size.Width = 297.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    TintColor = claSteelblue
+    TextColor = claWhite
+  end
+end

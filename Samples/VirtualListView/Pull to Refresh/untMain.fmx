@@ -1,0 +1,51 @@
+object Form5: TForm5
+  Left = 0
+  Top = 0
+  Caption = 'Form5'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object ksToolbar1: TksToolbar
+    Font.Size = 14.000000000000000000
+    Text = '"PULL TO REFRESH" DEMO'
+    Size.Width = 640.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object btnClear: TButton
+      Align = Right
+      Position.X = 560.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'CLEAR'
+      OnClick = btnClearClick
+    end
+  end
+  object ksVirtualListView1: TksVirtualListView
+    Align = Client
+    DeleteButton.Text = 'Delete'
+    NoItemsText.Enabled = True
+    NoItemsText.Text = 'NO CURRENT ITEMS'
+    NoItemsText.Font.Size = 18.000000000000000000
+    PullToRefresh.PullText = 'PULL TO REFRESH'
+    PullToRefresh.ReleaseText = 'RELEASE TO REFRESH'
+    PullToRefresh.Enabled = True
+    Size.Width = 640.000000000000000000
+    Size.Height = 396.000000000000000000
+    Size.PlatformDefault = False
+    OnPullRefresh = ksVirtualListView1PullRefresh
+  end
+  object ToolBar1: TToolBar
+    Align = Bottom
+    Position.Y = 440.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+  end
+end
