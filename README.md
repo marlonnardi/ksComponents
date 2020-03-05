@@ -17,7 +17,11 @@ Enhanced ListView componnent
 - Swipe (action) buttons
 - Lots more.
 
-https://bytebucket.org/gmurt/kscomponents/raw/d102258c466a604e30547480b7ba06d8254d91e1/Samples/VirtualListView/screenshot.png
+<p align="center">
+  <a  href="https://bytebucket.org/gmurt/kscomponents/raw/d102258c466a604e30547480b7ba06d8254d91e1/Samples/VirtualListView/screenshot.png" >
+<img src="https://bytebucket.org/gmurt/kscomponents/raw/d102258c466a604e30547480b7ba06d8254d91e1/Samples/VirtualListView/screenshot.png"width="" style="margin: 0 auto;"/>
+  </a >
+</p>
 
 ** TksTabControl
 
