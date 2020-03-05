@@ -44,7 +44,7 @@ type
   TksListViewFilter = class(TCustomEdit)
   private
     FTimer: TTimer;
-    FClearButton: TButton;
+    FClearButton: TSpeedButton;
     FButtonText: string;
     procedure DoTimer(Sender: TObject);
     procedure DoClickClear(Sender: TObject);
@@ -66,8 +66,7 @@ implementation
 
 
 
-uses Math, System.TypInfo, System.Types, ksCommon, SysUtils,
-  Fmx.Forms, FMX.Controls;
+uses Math, System.TypInfo, System.Types, ksCommon, SysUtils, Fmx.Forms, FMX.Controls;
 
 procedure Register;
 begin
@@ -91,7 +90,7 @@ begin
   FTimer := TTimer.Create(nil);
   FTimer.Interval := 1000;
   FTimer.OnTimer := DoTimer;
-  FClearButton := TButton.Create(Self);
+  FClearButton := TSpeedButton.Create(Self);
   FClearButton.Name := Name + 'FilterButton';
   FClearButton.Align := TAlignLayout.Right;
   FClearButton.TextSettings.Font.Size := 13;
