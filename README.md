@@ -44,7 +44,6 @@ PinCode entry component
 
 ** Left Menu **
 
-PinCode entry component
 <p align="left">
   <img src="https://raw.githubusercontent.com/marlonnardi/ksComponents/master/images/left_menu.png"height="220px"/>
 </p>
