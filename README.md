@@ -3,7 +3,7 @@ Kernow Software FMX Components
 
 Project forked from https://bitbucket.org/gmurt/kscomponents thanks Graham Murt
 
-Kernow Software FMX Components for XE8, Delphi Berlin, Delphi Seattle, Delphi Tokyo and Delphi Rio.
+Kernow Software FMX Components for Delphi XE8, Delphi 10, Delphi 10.1, Delphi 10.2 and Delphi 10.3
 
 Have a play and let me know your thoughts.
 
