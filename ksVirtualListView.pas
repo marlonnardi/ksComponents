@@ -32,7 +32,7 @@ interface
 uses System.Classes, System.Types, ksTypes, FMX.Graphics, System.UITypes,
   System.Generics.Collections, FMX.Types, FMX.InertialMovement, System.UIConsts,
   FMX.StdCtrls, FMX.Controls, FMX.Platform, FMX.Objects, FMX.Edit,
-  FMX.TextLayout, ksListViewFilter, System.RTTI;
+  FMX.TextLayout, ksListViewFilter, System.RTTI, System.Threading;
 
 const
   C_VLIST_ITEM_DEFAULT_HEIGHT = 44;
@@ -700,16 +700,14 @@ type
     constructor Create(AOwner: TComponent); override;
   end;
 
+  TksAniCalc = class(TAniCalculations)
+  public
+    procedure UpdatePosImmediately;
+  end;
 
-  [ComponentPlatformsAttribute(
-    pidWin32 or
-    pidWin64 or
-    {$IFDEF XE8_OR_NEWER} pidiOSDevice32 or pidiOSDevice64 {$ELSE} pidiOSDevice {$ENDIF} or
-    {$IFDEF XE10_3_OR_NEWER} pidiOSSimulator32 or pidiOSSimulator64 {$ELSE} pidiOSSimulator {$ENDIF} or
-    {$IFDEF XE10_3_OR_NEWER} pidAndroid32Arm or pidAndroid64Arm {$ELSE} pidAndroid {$ENDIF}
-    )]
 
-  TksVirtualListView = class(TksControl)
+  [ComponentPlatformsAttribute(pidAllPlatforms)]
+  TksVirtualListView = class(TControl)
   private
     [weak]FFilterEdit: TksListViewFilter;
     FAniCalc: TksAniCalc;
@@ -2250,7 +2248,6 @@ procedure TksVirtualListView.DoItemClicked(AItem: TksVListItem;
   ACallClickEvent: Boolean);
 var
   AHandled: Boolean;
-  Thread: TThread;
 begin
   if AItem = nil then
     Exit;
@@ -2931,7 +2928,6 @@ var
   ACanDelete: Boolean;
 begin
   inherited;
-
   Root.SetFocused(nil);
   if FScrollPos < 0 then
     Exit;
