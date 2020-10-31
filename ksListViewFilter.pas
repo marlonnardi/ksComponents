@@ -104,6 +104,7 @@ begin
   FClearButton.OnMouseDown := ClearButtonMouseDown;
   FClearButton.Visible := False;
   AddObject(FClearButton);
+  Height := 60;
 end;
 
 destructor TksListViewFilter.Destroy;
