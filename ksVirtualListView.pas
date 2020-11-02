@@ -1817,9 +1817,14 @@ end;
 
 procedure TksVListItem.DeleteCalcChange(Sender: TObject);
 begin
-  if FOwner <> nil then
+  if (FOwner <> nil) and (FDeleteCalc <> nil) then
   begin
-    Height := Round(FDeleteCalc.ViewportPosition.y);
+    try
+      if FDeleteCalc.ViewportPositionF.Length > 0 then
+      Height := Round(FDeleteCalc.ViewportPosition.y);
+    except
+      //
+    end;
     FOwner.UpdateItemRects;
     FOwner.FOwner.Invalidate;
   end;
