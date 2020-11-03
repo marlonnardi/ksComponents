@@ -1362,7 +1362,7 @@ end;
 
 procedure TksVListItem.DoItemPickerChanged(Sender: TObject;
   AItem: string; AValueIndex: Integer);
-var
+{var
   Thread: TThread;
 begin
   Thread := TThread.CreateAnonymousThread (
@@ -1386,9 +1386,9 @@ begin
     end
   );
   Thread.start;
-end;
+end;}
 
-  {var
+var
   ATask: ITask;
 begin
   if Assigned(FBeforeSelectPickerItem) then
@@ -1398,20 +1398,21 @@ begin
   FDetail.Text := AItem;
   FDetail.ClearCache;
 
-  ATask := TTask.Create (procedure ()
-   begin
-     TThread.Synchronize(nil,procedure
-                  begin
-                    if Assigned(FOnSelectPickerItem) then
-                      FOnSelectPickerItem(FOwner.FOwner, Self, AItem);
-
-                  end);
-   end);
- ATask.Start;
-end;  }
+  ATask := TTask.Create(
+    procedure()
+    begin
+      TThread.Synchronize(nil,
+        procedure
+        begin
+          if Assigned(FOnSelectPickerItem) then
+            FOnSelectPickerItem(FOwner.FOwner, Self, AItem);
+        end);
+    end);
+  ATask.Start;
+end;
 
 procedure TksVListItem.SelectItem(ADeselectAfter: integer);
-var
+{var
   Thread: TThread;
 begin
   if (FPurpose <> None) or (FCanSelect = False) then
@@ -1433,9 +1434,9 @@ begin
     end
   );
   Thread.start;
-end;
+end;}
 
-{var
+var
   ATask: ITask;
 begin
   if (FPurpose <> None) or (FCanSelect = False) then
@@ -1448,18 +1449,19 @@ begin
   if ADeselectAfter > 0 then
   begin
 
-    ATask := TTask.Create (procedure ()
-    begin
-      Sleep(ADeselectAfter);
-      TThread.Synchronize(nil,procedure
-
-                   begin
-                     Selected := False;
-                   end);
-    end);
+    ATask := TTask.Create(
+      procedure()
+      begin
+        Sleep(ADeselectAfter);
+        TThread.Synchronize(nil,
+          procedure
+          begin
+            Selected := False;
+          end);
+      end);
     ATask.Start;
   end;
-end; }
+end;
 
 procedure TksVListItem.SetAccessory(const Value: TksVListItemAccessoryObject);
 begin

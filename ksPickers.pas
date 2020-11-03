@@ -27,7 +27,7 @@ unit ksPickers;
 interface
 
 {$IFDEF IOS}
-{$DEFINE DPF}
+//{$DEFINE DPF}
 {$ENDIF}
 
 uses FMX.Pickers, Classes, FMX.Controls, System.Types
