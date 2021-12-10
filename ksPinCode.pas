@@ -133,7 +133,8 @@ begin
   inherited;
 end;
 
-procedure TksPinCode.DoDeletePressed;
+
+procedure TksPinCode.DoDeletePressed;
 begin
   if Length(FCode) > 0 then
     FCode := Copy(FCode, 1, Length(FCode)-1);

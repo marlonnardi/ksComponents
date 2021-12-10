@@ -150,11 +150,14 @@ begin
 end;
 
 
-
+
+
 { TksMapMarkers }
-
+
+
 procedure TksMapMarkers.Clear;
-var
+
+var
   Marker: TksMapMarker;
 begin
   for Marker in Self do
@@ -163,13 +166,15 @@ begin
 end;
 
 procedure TksMapMarkers.DeleteMarker(AMarker: TksMapMarker);
-begin
+
+begin
   AMarker.FMarker.Remove;
   Delete(IndexOf(AMarker));
 end;
 
 procedure TksMapMarkers.DeleteMarker(AMarkerID: string);
-var
+
+var
   Marker: TksMapMarker;
 begin
   Marker := MarkerByID[AMarkerID];
@@ -178,7 +183,8 @@ begin
 end;
 
 function TksMapMarkers.GetKsMarker(AMarker: TMapMarker): TksMapMarker;
-var
+
+var
   Marker: TksMapMarker;
 begin
   Result := nil;
@@ -193,7 +199,8 @@ begin
 end;
 
 function TksMapMarkers.GetMarkerByID(AID: string): TksMapMarker;
-var
+
+var
   Marker: TksMapMarker;
 begin
   Result := nil;
@@ -208,19 +215,23 @@ begin
 end;
 
 { TksMapMarker }
-
+
+
 function TksMapMarker.GetSnippet: string;
-begin
+
+begin
   Result := FMarker.Descriptor.Snippet;
 end;
 
 function TksMapMarker.GetTitle: string;
-begin
+
+begin
   Result := FMarker.Descriptor.Title;
 end;
 
 procedure TksMapMarker.Remove;
-begin
+
+begin
   FMarker.Remove;
 end;
 
