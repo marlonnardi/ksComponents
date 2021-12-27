@@ -18,7 +18,7 @@ Enhanced ListView componnent
 - Lots more.
 
 <p align="left">
-  <img src="https://raw.githubusercontent.com/marlonnardi/ksComponents/master/images/screenshot.png"height="220px" style="margin: 0 auto;"/>
+  <img src="https://raw.githubusercontent.com/marlonnardi/ksComponents/master/images/screenshot.png"height="300px" style="margin: 0 auto;"/>
   </a>
 </p>
 
@@ -31,21 +31,21 @@ Enhanced TabControl component
 - badge support
 
 <p align="left">
-  <img src="https://raw.githubusercontent.com/marlonnardi/ksComponents/master/images/screenshot_dark.png"height="220px"/>
-  <img src="https://raw.githubusercontent.com/marlonnardi/ksComponents/master/images/screenshot_light.png"height="220px"/>
+  <img src="https://raw.githubusercontent.com/marlonnardi/ksComponents/master/images/screenshot_dark.png"height="300px"/>
+  <img src="https://raw.githubusercontent.com/marlonnardi/ksComponents/master/images/screenshot_light.png"height="300px"/>
 </p>
 
 ** TksPinCode **
 
 PinCode entry component
 <p align="left">
-  <img src="https://raw.githubusercontent.com/marlonnardi/ksComponents/master/images/pin.png"height="220px"/>
+  <img src="https://raw.githubusercontent.com/marlonnardi/ksComponents/master/images/pin.png"height="300px"/>
 </p>
 
 ** Left Menu **
 
 <p align="left">
-  <img src="https://raw.githubusercontent.com/marlonnardi/ksComponents/master/images/left_menu.png"height="220px"/>
+  <img src="https://raw.githubusercontent.com/marlonnardi/ksComponents/master/images/left_menu.png"height="300px"/>
 </p>
 
 Any suggestions for updates are welcome :-) 
