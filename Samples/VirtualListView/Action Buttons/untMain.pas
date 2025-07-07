@@ -5,7 +5,7 @@ interface
 uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.StdCtrls,
-  FMX.Controls.Presentation, FMX.Objects, FMX.Ani, ksTypes, ksVirtualListView,
+  FMX.Controls.Presentation, FMX.Objects, FMX.Ani, ksVirtualListView,
   FMX.Layouts;
 
 type
@@ -41,7 +41,7 @@ var
 
 implementation
 
-uses System.UIConsts;
+uses System.UIConsts, ksAccessories;
 
 {$R *.fmx}
 
