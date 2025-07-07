@@ -18,7 +18,7 @@ Enhanced ListView componnent
 - Lots more.
 
 <p align="left">
-  <img src="https://raw.githubusercontent.com/marlonnardi/ksComponents/master/images/screenshot.png"height="300px" style="margin: 0 auto;"/>
+  <img src="https://raw.githubusercontent.com/marlonnardi/ksComponents/master/images/screenshot.png"height="300px"/>
   </a>
 </p>
 
